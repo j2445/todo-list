@@ -4,17 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <title>Todo List</title>
   </head>
   <body>
-    <h1>todos</h1>
-    <form id="form">
-      <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
-
+    <div class="container">
+      <h1 class="title">My Tasks <i class="fas fa-tasks"></i></h1>
+      <form id="form" class="todo-form">
+        <input type="text" class="input" id="input" placeholder="What needs to be done?" autocomplete="off">
+        <button type="submit" class="add-btn"><i class="fas fa-plus"></i></button>
+      </form>
       <ul class="todos" id="todos"></ul>
-    </form>
-    <small>Left click to toggle completed. <br> Right click to delete todo</small>
-
+      <div class="info">
+        <small>Left click to toggle completed <i class="fas fa-check"></i></small>
+        <small>Right click to delete todo <i class="fas fa-trash"></i></small>
+      </div>
+      <div class="developer-credit">
+        <p>Developed with <i class="fas fa-heart pulse"></i> by Joy Patel</p>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
